@@ -1,0 +1,141 @@
+$blue-bg:#0B071C;
+$black-color:#000000;
+$white-color: #FFFFFF;
+$color-primary:#5200FF;
+$grey-color:#F7F8FC;
+$border-color:#EBEDF3;
+
+$xs: 0px;
+$sm: 576px;
+$md: 767px;
+$lg: 1024px;
+$xl: 1200px;
+$xxl: 1400px;
+
+.footer{
+    background-color:$blue-bg;
+    padding: 30px 0px 40px 0px;
+    @media screen and (max-width: $md){
+        padding: 30px 0px 30px 0px;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        @media screen and (max-width: $md){
+            justify-content: center;
+        }
+        &:nth-child(1){
+            margin-bottom: 20px;
+        }
+        p{
+            color: rgb(255 255 255 / 60%);
+            margin-bottom: 0px;
+            font-size: 16px;
+            text-align: center;
+            width: 100%;
+        }
+        .col{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 25%;
+            @media screen and (max-width: $md){
+                width: 100%;
+                justify-content: center;
+            }
+            &:nth-child(2){
+                width: 50%;
+                @media screen and (max-width:$md){
+                    width: 100%;
+                }
+            }
+            &:last-child{
+                justify-content: end;
+                @media screen and (max-width:$md){
+                    justify-content: center;
+                } 
+            }
+            &.menu{
+                flex-direction: row;
+                flex-wrap: nowrap;
+                gap: 48px;
+                justify-content: center;
+                margin-top: 6px;
+                @media screen and (max-width:$xl){
+                   gap:20px;
+                } 
+                @media screen and (max-width:$lg){
+                    gap:0px;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                } 
+                 @media screen and (max-width:$md){
+                    margin: 20px 0px;
+                } 
+                a{
+                    width: auto;
+                    @media screen and (max-width:$md){
+                        width: 100%;
+                    } 
+                }
+            }
+            .footer-logo{
+                margin-bottom: 24px;
+                @media screen and (max-width:$md){
+                    justify-content: center;
+                }
+            }
+            a{
+                display: flex;
+                align-items: flex-start;
+                gap: 8px;
+                color: $white-color;
+                width: 100%;
+                font-size: 16px;
+                font-weight: 600;
+                text-decoration: none;
+                margin-bottom: 5px;
+                @media screen and (max-width:$md){
+                    justify-content: center;
+                }
+                img{
+                    margin-top: 4px;
+                }
+                &:hover{
+                    color: $color-primary;
+                }
+                &.loc-link{
+                    text-decoration: underline;
+                }
+            }
+           
+            button{
+                padding: 12px 24px;
+                font-weight: 600;
+                z-index: 9;
+                &:hover{
+                    border: 1px solid transparent;
+                    background-color: transparent;
+                    background-image: linear-gradient(to right, #5200FF, #00BBFF, #5FEFDE);
+                    color: $white-color;
+                    &:before{
+                        background-image: linear-gradient(to right, #5200FF, #00BBFF, #5FEFDE);
+                    }
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 1px;
+                    right: 1px;
+                    bottom: 1px;
+                    left: 1px;
+                    background-color: $blue-bg;
+                    z-index: -1;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+}

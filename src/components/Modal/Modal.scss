@@ -1,0 +1,91 @@
+$black-color:#000000;
+$white-color: #FFFFFF;
+$color-primary:#5200FF;
+$grey-color:#F7F8FC;
+$blue-color:#0B071C;
+$border-color:#EBEDF3;
+
+  $xs: 374px;
+  $sm: 576px;
+  $md: 767px;
+  $lg: 992px;
+  $xl: 1200px;
+  $xxl: 1400px;
+  body{
+    &.modal-open{
+      overflow: hidden;
+    }
+  }
+  button{
+    &.close-icon{
+      position: absolute;
+      right: 44px;
+      top: 44px;
+      max-width: 15px;
+      height: 15px;
+      background-color: transparent;
+      padding: 0;
+      border: none;
+      background-image: none;
+      @media screen and (max-width:$xl){
+        right: 20px;
+        top: 25px;
+        max-width: 30px;
+        height: 30px;
+        padding: 9px;
+        display: flex;
+        align-items: center;
+      }
+      @media screen and (max-width:$md){
+        right: 15px;
+        top: 15px;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        filter: invert(1) brightness(0.5);
+        position: relative;
+        top: -1px;
+        object-fit: contain;
+        @media screen and (max-width:$xl){
+          top: 0px;
+        }
+      }
+    }
+  }
+  .modal{
+    padding: 50px 0px;
+    .modal-main{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      .modal-content{
+        overflow: hidden;
+      }
+    }
+    .card{
+      @media screen and (max-width:$lg){
+        height: 100%;
+      }
+    }
+    &.display-none{
+      display: none;
+    }
+    &.display-block{
+        position: fixed;
+        overflow: auto;
+        background-color: rgb(0 0 0 / 64%);
+        left: 0px;
+        right: 0px;
+        z-index: 99;
+        top: 0px;
+        bottom: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
