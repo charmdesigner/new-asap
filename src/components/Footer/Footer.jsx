@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col">
-              <Link to="/new-asap" className="footer-logo">
+              <Link to="/asap" className="footer-logo">
                 <img src={FooterLogo} alt="footer-logo" />
               </Link>
               <ul>
@@ -32,9 +32,9 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col menu">
-              <Link to="/new-asap">Mentions légales</Link>
-              <Link to="/new-asap">CGU & CGV</Link>
-              <Link to="/new-asap">Politique de confidentialité</Link>
+              <Link to="/asap">Mentions légales</Link>
+              <Link to="/asap">CGU & CGV</Link>
+              <Link to="/asap">Politique de confidentialité</Link>
             </div>
             <div className="col">
               <button type="button">Déposer un CV</button>

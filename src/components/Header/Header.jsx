@@ -29,16 +29,16 @@ const Header = () => {
         <div className="container">
           <div className="row">
             <div className="col">
-              <Link to="/new-asap">
+              <Link to="/asap">
                 <img src={Logo} className="logo" alt="logo" />
               </Link>
               <div className={active ? "navbar active" : "navbar"}>
                 <nav className="nav">
-                  <NavLink to="/new-asap">Qui sommes-nous</NavLink>
-                  <NavLink to="/new-asap">Notre mission</NavLink>
-                  <NavLink to="/new-asap">Comment ça marche</NavLink>
-                  <NavLink to="/new-asap">Boostez vos CV</NavLink>
-                  <NavLink to="/new-asap">Nos formules</NavLink>
+                  <NavLink to="/asap">Qui sommes-nous</NavLink>
+                  <NavLink to="/asap">Notre mission</NavLink>
+                  <NavLink to="/asap">Comment ça marche</NavLink>
+                  <NavLink to="/asap">Boostez vos CV</NavLink>
+                  <NavLink to="/asap">Nos formules</NavLink>
                 </nav>
               </div>
               <div className="menu-icon" onClick={handleClick}>

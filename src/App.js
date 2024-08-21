@@ -9,8 +9,8 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/new-asap" exact element={<Home />} />
-        <Route path="/new-asap/register" exact element={<Register />} />
+        <Route path="/asap" exact element={<Home />} />
+        <Route path="/asap/register" exact element={<Register />} />
       </Routes>
     </BrowserRouter>
   );
